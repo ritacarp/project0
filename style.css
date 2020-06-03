@@ -1,0 +1,78 @@
+body {
+  background-color: white;
+}
+
+.box {
+  position: relative;
+  display: inline-block;
+  /* Make the width of box same as image */
+}
+
+.box .text {
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 10%;
+  /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  width: 80%;
+  /* Set the width of the positioned div */
+}
+
+.top-left {
+  position: absolute;
+  top: 3px;
+  left: 35px;
+}
+
+.myTable {
+  width: 100%;
+}
+
+.myTable .myTable_tr {
+  width: 100%;
+}
+
+.myTable .myTable_tr:hover {
+  font-weight: bold;
+  background-color: lightgrey;
+}
+
+.polaroid {
+  width: 320px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 5px #aaaaaa;
+          box-shadow: 10px 10px 5px #aaaaaa;
+  position: relative;
+}
+
+.dramatic {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="tinyScreen"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-bottom: 4px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  [class*="travelCollapse"] {
+    position: fixed;
+    top: 100px;
+    z-index: 100;
+  }
+}
+/*# sourceMappingURL=style.css.map */

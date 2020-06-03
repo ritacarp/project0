@@ -1,0 +1,89 @@
+<!--  127.0.0.1/Page3.html -->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Required meta tags -->
+    <!-- http://redrussak.com/ -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <title>Books</title>
+
+
+
+
+  </head>
+  <body>
+
+
+<div class="container">
+  <h2>My favorite books</h2>
+
+
+
+	                        <div class="row" style="padding-right:10px">
+
+	                           <img data-toggle="tooltip" data-html="true" title="Herman Wouk<br />Winds Of War" id="booksThumbnail_01" class="rounded bookButton" data-asin="B0020BUX54" style="cursor: pointer;padding-right:4px;" src="images/WindsOfWar_d.jpg" alt="Winds Of War">
+
+	                           <img data-toggle="tooltip" data-html="true" title="Herman Wouk<br />War And Remembrance" id="booksThumbnail_02" class="rounded bookButton" data-asin="B0033UT24E" style="cursor: pointer;padding-right:4px;" src="images/WarAndRemembrance_d.jpg" alt="War And Remembrance">
+
+	                           <img data-toggle="tooltip" data-html="true" title="Ayn Rand<br />Atlas Shrugged" id="booksThumbnail_03" class="rounded bookButton" data-asin="B01FEK8J94" style="cursor: pointer;padding-right:4px;"  src="images/AtlasShrugged_d.jpg" alt="Atlas Shrugged">
+
+	                           <img data-toggle="tooltip" data-html="true" title="David Benioff<br />City Of Thieves" id="booksThumbnail_04" class="rounded bookButton" data-asin="B0018QSNYK" style="cursor: pointer;padding-right:4px;"  src="images/CityOfThieves_d.jpg" alt="City Of Thieves">
+
+	                           <img data-toggle="tooltip" data-html="true" title="Geraldine Brooks<br />March" id="booksThumbnail_05" class="rounded bookButton" data-asin="B017WQIV14" style="cursor: pointer;padding-right:4px;"  src="images/March_d.jpg" alt="March">
+
+	                           <img data-toggle="tooltip" data-html="true" title="Barbara Ehrenreich<br />Nickel And Dimed" id="booksThumbnail_06" class="rounded bookButton" data-asin="B0006IU7B8" style="cursor: pointer;padding-right:4px;"  src="images/NickelAndDimed_d.jpg" alt="Nickel And Dimed">
+
+	                           <img data-toggle="tooltip" data-html="true" title="Dan Senor and Saul Singer<br />Start Up Nation" id="booksThumbnail_07" class="rounded bookButton" data-asin="B008NV71W8" style="cursor: pointer;padding-right:4px;"  src="images/StartUpNation_d.jpg" alt="Start Up Nation">
+
+	                           <img data-toggle="tooltip" data-html="true" title="Charles Fishman<br />The Big Thirst" id="booksThumbnail_08" class="rounded bookButton" data-asin="B0043RSJVI" style="cursor: pointer;padding-right:4px;"  src="images/TheBigThirst_d.jpg" alt="The Big Thirst">
+
+	                           <img data-toggle="tooltip" data-html="true" title="Geraldine Brooks<br />People Of The Book" id="booksThumbnail_09" class="rounded bookButton" data-asin="B000YJ66SW" style="cursor: pointer;padding-right:4px;"  src="images/PeopleOfTheBook_d.jpg" alt="People Of The Book">
+
+
+	                        </div>  <!-- class="row" -->
+
+
+	                     </div>  <!-- class="container" -->
+
+
+<div class="container">
+Click <a href="index.html">here</a> for homepage.<br />
+Click <a href="Page2.html">here</a> for contact info.<br />
+Click <a href="Page4.html">here</a> for an example of spinners.<br />
+</div>
+
+
+  <script>
+
+
+  $('.bookButton').on('click', function () {
+     var thisID = $(this).attr("id" )
+     var handle = "#" + thisID
+     var asin = $(handle).attr("data-asin" )
+     var url = "https://www.amazon.com/dp/" + asin
+     var win = window.open(url, '_blank');
+
+  });
+
+
+
+
+</script>
+
+</body>
